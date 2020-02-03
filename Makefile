@@ -1,5 +1,5 @@
 
-CXXFLAGS = -std=c++14 -lstdc++
+CXXFLAGS = -std=c++11 -lstdc++
 
 ALL = karatsuba
 
