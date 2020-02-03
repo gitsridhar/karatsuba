@@ -1,7 +1,7 @@
 
 CXXFLAGS = -g -Wall -Wfatal-errors -std=c++14
 
-ALL = hello
+ALL = karatsuba
 
 all: $(ALL)
 
