@@ -16,3 +16,4 @@ install:
 script:
   - make all
   - ./karatsuba
+  - uname -a
