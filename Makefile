@@ -1,12 +1,15 @@
 
-CXXFLAGS = -g -Wall -Wfatal-errors -std=c++14
+CXXFLAGS = -std=c++14 -lstdc++
 
 ALL = karatsuba
 
 all: $(ALL)
 
-karatsuba: cplusplus/final.cpp Makefile
-	$(CXX) $(CXXFLAGS) -o $@ $@.cpp
+final.o : cplusplus/final.cpp
+        gcc -c $(CXXFLAGS) cplusplus/final.cpp
+
+karatsuba: final.o
+        gcc $(CXXFLAGS) -o $@ final.o
 
 clean:
-	$(RM) $(ALL) *.o
+        $(RM) $(ALL) *.o
