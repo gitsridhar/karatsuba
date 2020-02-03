@@ -1,4 +1,3 @@
-
 CXXFLAGS = -std=c++14 -lstdc++
 
 ALL = karatsuba
