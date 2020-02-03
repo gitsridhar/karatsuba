@@ -1,7 +1,7 @@
 # karatsuba
 Multiply large numbers
 
-https://travis-ci.org/gitsridhar/karatsuba.svg?branch=master
+[![Build Status](https://travis-ci.org/gitsridhar/karatsuba.svg?branch=master)](https://travis-ci.org/gitsridhar/karatsuba)
 
 Multiply C++ code with this command line :
 
