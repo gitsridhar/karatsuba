@@ -5,7 +5,7 @@ REPO_NAME=svenkatdock
 IMAGE_VERSION=2.0.2
 IMAGE_NAME=$(NAME)
 IMAGE_NAME = karatsuba
-
+NAME = karatsuba
 ALL = karatsuba
 
 all: $(ALL)
