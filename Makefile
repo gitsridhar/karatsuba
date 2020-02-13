@@ -23,10 +23,10 @@ karatsuba: final.o
 	g++ $(CXXFLAGS) -o $@ final.o
 
 build-image: karatsuba
-	docker build --network=host -t $(REPO_NAME)/$(IMAGE_NAME):$(IMAGE_VERSION) ./src
+	docker build --network=host -t $(REPO_NAME)/$(IMAGE_NAME):$(IMAGE_VERSION) .
 
 save-image: build-image
-	docker save $(REPO_NAME)/$(IMAGE_NAME):$(IMAGE_VERSION) -o _output/$(IMAGE_NAME)_$(IMAGE_VERSION).tar
+	docker save $(REPO_NAME)/$(IMAGE_NAME):$(IMAGE_VERSION) -o $(IMAGE_NAME)_$(IMAGE_VERSION).tar
 
 push-image: save-image
 	docker push $(REPO_NAME)/$(IMAGE_NAME):$(IMAGE_VERSION)
