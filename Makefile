@@ -22,7 +22,7 @@ final.o : cplusplus/final.cpp
 karatsuba: final.o
 	g++ $(CXXFLAGS) -o $@ final.o
 
-build-image: $NAME
+build-image: karatsuba
 	docker build --network=host -t $(REPO_NAME)/$(IMAGE_NAME):$(IMAGE_VERSION) ./src
 
 save-image: build-image
