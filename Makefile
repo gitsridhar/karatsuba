@@ -2,7 +2,7 @@
 CXXFLAGS = -std=c++11 -lstdc++
 
 REPO_NAME=svenkatdock
-IMAGE_VERSION=2.0.2
+IMAGE_VERSION=0.0.1
 IMAGE_NAME=$(NAME)
 IMAGE_NAME = karatsuba
 NAME = karatsuba
