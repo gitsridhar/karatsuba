@@ -14,6 +14,6 @@ addons:
 install:
 - "[ $CXX = g++ ] && export CXX=g++-7 || true"
 script:
-  - make all
+  - make push-image
   - ./karatsuba
   - uname -a
