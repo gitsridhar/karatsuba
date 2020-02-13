@@ -1,4 +1,4 @@
-ROM registry.access.redhat.com/ubi7:latest
+FROM registry.access.redhat.com/ubi7:latest
 LABEL name="Sridhar Karatsuba" \
       vendor="sridhar" \
       version="0.0.9" \
