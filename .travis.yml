@@ -1,5 +1,5 @@
 os: linux
-arch: ppc64le
+arch: x86_64
 sudo: false
 language: cpp
 compiler:
