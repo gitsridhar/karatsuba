@@ -8,7 +8,7 @@ IMAGE_NAME = karatsuba
 NAME = karatsuba
 ALL = karatsuba
 
-all: $(ALL)
+all: $(NAME)
 
 docker-login:
 ifndef $(and DOCKER_USERNAME, DOCKER_PASSWORD)
