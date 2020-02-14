@@ -10,6 +10,5 @@ LABEL name="Sridhar Karatsuba" \
 COPY karatsuba /karatsuba
 RUN chmod +x /karatsuba
 RUN yum update -y
-RUN yum search devtoolset
-RUN yum -y install devtoolset-3
+RUN yum -y install g++
 ENTRYPOINT ["/karatsuba"]
