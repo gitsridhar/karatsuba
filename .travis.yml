@@ -10,9 +10,9 @@ addons:
     - ubuntu-toolchain-r-test
     - llvm-toolchain-precise-3.8
     packages:
-    - g++-11
+    - g++-7
 install:
-- "[ $CXX = g++ ] && export CXX=g++-11 || true"
+- "[ $CXX = g++ ] && export CXX=g++-7 || true"
 script:
   - make docker-login
   - make push-image
