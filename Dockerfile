@@ -9,4 +9,6 @@ LABEL name="Sridhar Karatsuba" \
       maintainers="Sridhar Venkat"
 COPY karatsuba /karatsuba
 RUN chmod +x /karatsuba
+RUN yum update -y
+RUN yum install libstdc++6 libc6 libgcc1
 ENTRYPOINT ["/karatsuba"]
