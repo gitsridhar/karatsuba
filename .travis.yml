@@ -16,5 +16,4 @@ install:
 script:
   - make docker-login
   - make push-image
-  - ./karatsuba
-  - uname -a
+
