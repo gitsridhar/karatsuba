@@ -10,5 +10,5 @@ LABEL name="Sridhar Karatsuba" \
 COPY karatsuba /karatsuba
 RUN chmod +x /karatsuba
 RUN yum update -y
-RUN yum -y install gcc
+RUN yum -y install devtoolset-7
 ENTRYPOINT ["/karatsuba"]
