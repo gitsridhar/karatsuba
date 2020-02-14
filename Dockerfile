@@ -10,5 +10,5 @@ LABEL name="Sridhar Karatsuba" \
 COPY karatsuba /karatsuba
 RUN chmod +x /karatsuba
 RUN yum update -y
-RUN yum yum -y groupinstall "Development Tools"
+RUN yum yum -y group install "Development Tools"
 ENTRYPOINT ["/karatsuba"]
