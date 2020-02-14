@@ -11,4 +11,5 @@ COPY karatsuba /karatsuba
 RUN chmod +x /karatsuba
 RUN yum update -y
 RUN yum -y install gcc-c++
+RUN yum whatprovides '*libstdc++*' | egrep -o '3\.4\.[0-9]+' | sort -u
 ENTRYPOINT ["/karatsuba"]
