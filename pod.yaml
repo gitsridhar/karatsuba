@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: karatsuba-pod
+  labels:
+    app: karatsuba
+spec:
+  containers:
+   - name: karatsuba-container
+     image: svenkatdock/karatsuba:0.0.1
