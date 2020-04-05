@@ -1,0 +1,35 @@
+kind: Template
+apiVersion: template.openshift.io/v1
+metadata:
+  name: karatsuba-pod-template
+annotations:
+    openshift.io/display-name: "Karatsuba Pod"
+    openshift.io/documentation-url: "http://www.sridcloud.com"
+    openshift.io/long-description: "This is an application implementing Karatsuba algorithm"
+    openshift.io/provider-display-name: "Sridhar Venkat"
+    openshift.io/support-url: "http://www.sridcloud.com"
+    description: "This is an application implementing Karatsuba algorithm"
+    tags: "Karatsuba,ComputerScience"
+    iconClass: "nothing"
+message: "This is an application implementing Karatsuba algorithm"
+objects:
+- apiVersion: v1
+  kind: Pod
+  metadata:
+    name: "${POD_NAME}"
+    labels:
+      app: karatsuba
+  spec:
+    containers:
+     - name: karatsuba-container
+       image: svenkatdock/karatsuba:0.0.1
+       args:
+         - /sbin/init
+       securityContext:
+         privileged: true
+
+parameters:
+- name: POD_NAME
+  displayName: "Karatsuba Pod Name"
+  description: "Name of the Pod to be created"
+  required: true
