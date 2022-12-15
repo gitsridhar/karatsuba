@@ -98,6 +98,7 @@ int main(int argc, const char * argv[]) {
     //cout << karatsuba("3141592653589793238462643383279502884197169399375105820974944592", "2718281828459045235360287471352662497757247093699959574966967627") << endl;
 
     // correct answer
+    cout << "The answers are :" << endl;
     cout << karatsuba("1234", "5678") << endl;
     cout << karatsuba("1234567890", "1234567890") << endl;
 
